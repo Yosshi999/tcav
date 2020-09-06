@@ -25,6 +25,9 @@ _KEYS = [
     "val_directional_dirs_std", "note", "alpha", "bottleneck"
 ]
 
+class HParams:
+  def __init__(self, **kwargs):
+    self.__dict__.update(kwargs)
 
 def create_session(timeout=10000, interactive=True):
   """Create a tf session for the model.

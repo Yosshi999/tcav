@@ -43,9 +43,9 @@ class CAV(object):
     regularization of the CAV parameters.
 
     Returns:
-      TF.HParams for training.
+      tcav.utils.HParams for training.
     """
-    return tf.contrib.training.HParams(model_type='linear', alpha=.01, max_iter=1000, tol=1e-3)
+    return utils.HParams(model_type='linear', alpha=.01, max_iter=1000, tol=1e-3)
 
   @staticmethod
   def load_cav(cav_path):
